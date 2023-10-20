@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Persons</title>
+</head>
+<body>
+    <h1>Create Room</h1>
+    <h2>Number of Persons and Total Amount</h2>
+    <form action="bcn.php" method="post">
+        <label for="numberOfPersons">Number of Persons:</label>
+        <input type="number" id="numberOfPersons" name="numberOfPersons" placeholder="Enter the number of persons">
+
+        <label for="totalAmount">Total Fund:</label>
+        <input type="number" id="totalAmount" name="totalAmount" placeholder="Enter the total fund">
+
+        <label for="numberOfMonths">Number of Months:</label>
+        <input type="text" id="numberOfMonths" name="numberOfMonths" readonly>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        
+        const numberOfPersonsInput = document.getElementById('numberOfPersons');
+        const numberOfMonthsInput = document.getElementById('numberOfMonths');
+
+       
+        numberOfPersonsInput.addEventListener('input', updatenumberOfMonths);
+
+        function updatenumberOfMonths() {
+            
+            const numberOfPersons = numberOfPersonsInput.value;
+
+            
+            numberOfMonthsInput.value = numberOfPersons;
+        }
+    </script>
+</body>
+</html>
