@@ -6,8 +6,8 @@ let cal=0.2*total;
 console.log(cal);
 document.getElementById('bb').innerHTML=(cal);
 let current=document.getElementById('cb');
+current.innerHTML=2000;
 currentbid=parseInt(current.innerHTML);
-// current.innerHTML="  ";
 
 
 
@@ -46,7 +46,7 @@ function add(id) {
     let a=id;
     let b=document.getElementById("userbid");
     let c=parseInt(b.innerHTML);
-    b.innerHTML=(c + a*100);
+    b.innerHTML=(c + a*100 + currentbid);
 }
 
 function clr() {
@@ -57,9 +57,5 @@ function clr() {
 function submittoserver() {
     let cub=document.getElementById("userbid");
     cub=parseInt(cub.innerHTML);
-    if ((cub<basebid)||(cub<=currentbid)) {
-    document.getElementById('container').innerHTML="Bidf";
-    } else {
-        document.getElementById('container').innerHTML="bids";
-    }
+    
 }
