@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIEF</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+        function display() {
+                    let a="sf";
+                    document.getElementById("no").innerHTML=a;
+        }
+    </script>
+</head>
+<body onmouseenter="display()">
+    <header>
+        <nav id="navbar">
+            <ul id="navul">
+                <li class="navitems"><a href="#groups"> Groups </a></li>
+                <li class="navitems"><a href="#deposit"> Deposit </a></li>
+                <li class="navitems"><a href="#auction"> Auction </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="groups">
+        <div id="group">
+            <div class="dwb">
+                <h3>CREATE</h3> <br>
+                <p>Create a new chit fund group</p> <br>
+                <button type="submit">Create</button>
+            </div>
+            <div class="dwb">
+                <h3>JOIN</h3> <br>
+                <p>Join a newly created chit fund group</p> <br>
+                <button type="submit" id="Hello">Join</button>
+            </div>
+        </div>
+    </section>
+    <section id="deposit">
+            <div class="dwb">
+                <h3>DEPOSIT</h3> <br>
+                <p>Deposit your monthly share for the chit fund</p> <br>
+                <button type="submit">Deposit</button>
+            </div>
+            <div class="abdep">
+                Number of groups you are in: <div id="no"></div>
+                Next Deposit: <div id="dt"></div>
+            </div>
+    </section>
+    <section id="auction">
+            <div class="dwb">
+                <h3>BID</h3> <br>
+                <p>Bid for some amount from the chit fund</p> <br>
+                <button type="submit">Bid</button>
+            </div>
+        </section>
+</body>
+</html>

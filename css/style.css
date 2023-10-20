@@ -1,0 +1,59 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#group{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dwb{
+    width: 20%;
+    height: 200px;
+    color: white;
+    padding: 25px;
+    margin: 25px 90px;   
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(53, 53, 53, 0.53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dwb>h3{
+    font-size: 1.7em;
+}
+
+button{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.539);
+    border-radius: 7px;
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+#deposit{
+    display: flex;
+}
