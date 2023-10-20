@@ -10,24 +10,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/auc.css">
-    <script src="js/auc.js"></script>
     <title>Auction</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
 
-        <div id="bd">
+        <div id="det">
             BID DETAILS:    <br>
-            Base bid:   <br>
-            Current bid:    <br>
+            Base bid: <div id="bb">00</div> 
+            Current bid: <div id="cb">00</div>    <br>
         </div>
-        <div id="time">
-            Time:   <br>
-            Countdown:  <br>
+        <div id="tm">
+            Time: <div id="time"></div>   <br>
+            Countdown: <div id="countd">30</div> <br>
         </div>
-        
+        <div id="bid">
+            Your bid amount:<div id="userbid">00</div>
+            <div id="QS">
+                Quick Select:
+                <div id="1" onclick="add(1)">+100</div>
+                <div id="5" onclick="add(5)">+500</div>
+                <div id="10" onclick="add(10)">+1000</div>
+            </div>
+            <button id="submitbid" onclick="submittoserver()">BID</button>
+            <button id="clear" onclick="clr()">CLEAR</button>
+        </div>
 
 
     </div>
+    
 </body>
+<script src="js/auc.js"></script>
 </html>

@@ -10,3 +10,14 @@ body{
     padding: 0;
     margin: 0;
 }
+
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+}
+input[type=submit]{
+    border-bottom-style: none;
+    text-decoration: none;
+    background: none;
+}
