@@ -5,6 +5,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -122,4 +126,17 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+.dwb>a{
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #127952;
+}
+
+.dwb>a:hover{
+    transform: scale(1.2);
 }
