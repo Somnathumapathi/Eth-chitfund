@@ -1,16 +1,19 @@
 /* CSS RESET */
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
+    /* background-color: white; */
+    background: url(https://www.thefinancepoint.com/wp-content/uploads/2021/11/What-is-Chit-Fund-1024x684.jpeg) no-repeat center center/cover;
+    backdrop-filter: blur(3px);
 }
 
-#main{
+#main {
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -18,7 +21,7 @@ body{
     align-items: center;
 }
 
-#group{
+#group {
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -26,26 +29,27 @@ body{
     align-items: center;
 }
 
-.dwb{
+.dwb {
     width: 20%;
     height: 200px;
     color: white;
     padding: 25px;
-    margin: 25px 90px;   
-    border: 2px solid black;
+    margin: 25px 90px;
+    /* border: 2px solid black; */
     border-radius: 15px;
     text-align: center;
-    background-color: rgba(53, 53, 53, 0.53);
+    background: rgba(8, 216, 130, 0.847);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.dwb>h3{
+
+.dwb>h3 {
     font-size: 1.7em;
 }
 
-button{
+button {
     color: white;
     background-color: rgba(0, 0, 0, 0.539);
     border-radius: 7px;
@@ -54,6 +58,68 @@ button{
     font-size: 1.1em;
 }
 
-#deposit{
+#deposit {
     display: flex;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(8, 216, 130, 0.847);
+    padding-top: 10px;
+}
+
+.sidenav-content {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #127952;
+}
+
+.hamburger {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    color: rgb(236, 242, 236);
+    font-size: 30px;
+    background: rgba(135, 215, 171, 0.792);
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+
+h1 {
+    font-style: normal;
+    color: rgb(4, 66, 37);
+    text-align: center;
+    padding: 10px;
+}
+
+#deposit{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#auction{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }

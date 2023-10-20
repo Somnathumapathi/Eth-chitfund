@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Cheth Funds</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHIEF</title>
@@ -12,14 +13,30 @@
       rel="stylesheet"
     />
     <script>
-        function display() {
-                    let a="sf";
-                    document.getElementById("no").innerHTML=a;
+        function hamb() {
+            if (document.getElementById("sidenav").style.display=="block") {
+                document.getElementById("sidenav").style.display="none";
+            } else {
+                document.getElementById("sidenav").style.display="block";
+            }
+                    
         }
+        function closeNav() {
+    document.getElementById("sidenav").style.display="none";
+}
     </script>
+    
 </head>
-<body onmouseenter="display()">
-    <header>
+<body>
+    <h1>CH-ETH FUNDS</h1>
+    <span class="hamburger" onclick="hamb()">&#9776;</span>
+    <div id="sidenav" class="sidenav">
+        <div class="sidenav-content">
+            <a href="#groups" onclick="closeNav()">Groups</a>
+            <a href="#deposit" onclick="closeNav()">Deposit</a>
+            <a href="#auction" onclick="closeNav()">Auction</a>
+    </div>
+    <!-- <header>
         <nav id="navbar">
             <ul id="navul">
                 <li class="navitems"><a href="#groups"> Groups </a></li>
@@ -27,7 +44,8 @@
                 <li class="navitems"><a href="#auction"> Auction </a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    </div>
     <section id="groups">
         <div id="group">
             <div class="dwb">
@@ -48,10 +66,10 @@
                 <p>Deposit your monthly share for the chit fund</p> <br>
                 <button type="submit">Deposit</button>
             </div>
-            <div class="abdep">
+            <!-- <div class="abdep">
                 Number of groups you are in: <div id="no"></div>
                 Next Deposit: <div id="dt"></div>
-            </div>
+            </div> -->
     </section>
     <section id="auction">
             <div class="dwb">
