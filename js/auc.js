@@ -26,32 +26,33 @@ let interval= setInterval(count, 1000);
 
 function count(){
 let cd=document.getElementById('countd');
-// if(parseInt(cd.innerHTML)==0){
-//     document.getElementById('container').innerHTML="BiddingDone";
-//     document.getElementById('container').style.fontSize="4rem";
-//     document.getElementById('container').style.textAlign="center";
-//     clearInterval(interval);
-//     clearInterval(interval1);
+if(parseInt(cd.innerHTML)==0){
+    document.getElementById('container').innerHTML="BiddingDone(TimeUp)";
+    document.getElementById('container').style.fontSize="4rem";
+    document.getElementById('container').style.textAlign="center";
+    clearInterval(interval);
+    clearInterval(interval1);
 
-// }
-// else{
-cd.innerHTML=(parseInt(cd.innerHTML)-1);
 }
+else{
+cd.innerHTML=(parseInt(cd.innerHTML)-1);
+}}
 
 console.log("hello");
 
 // USER SIDE BIDDING DATA
 
+let b=document.getElementById("userbid");
+b.innerHTML=currentbid;
 function add(id) {
     let a=id;
-    let b=document.getElementById("userbid");
     let c=parseInt(b.innerHTML);
-    b.innerHTML=(c + a*100 + currentbid);
+    b.innerHTML=(c + a*100);
 }
 
 function clr() {
     let b=document.getElementById("userbid");
-    b.innerHTML='00';
+    b.innerHTML=currentbid;
 }
 
 function submittoserver() {

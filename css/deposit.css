@@ -1,0 +1,29 @@
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text]{
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+div{
+    margin: 25px;
+}
+
+#roomid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centerdfrtr d                                                                                                                                                                                                                                        n;
+}

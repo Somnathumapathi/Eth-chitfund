@@ -21,3 +21,14 @@ input[type=submit]{
     text-decoration: none;
     background: none;
 }
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont{
+    width: 40%;
+    margin: 25px;
+}
